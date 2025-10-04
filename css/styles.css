@@ -327,6 +327,35 @@ body {
   font-size: 13px;
 }
 
+/* Image style */
+.image-card {
+  width: 100%;
+  max-width: 300px; /* adjust as needed */
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-card img {
+  width: 20rem;
+  height: 20rem; /* adjust height as needed */
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.image-card:hover img {
+  transform: scale(1.05);
+}
+
+.image-card:hover {
+  box-shadow: 0 10px 25px rgba(2,6,10,0.7);
+}
+/* Image style end */
+
 /* responsiveness */
 @media (max-width: 980px) {
   .projects-grid {
